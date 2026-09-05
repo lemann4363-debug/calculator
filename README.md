@@ -1,11 +1,40 @@
-# 🧮 Simple Calculator
+<!DOCTYPE html>
+<html lang="az">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kalkulyator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
 
-HTML, CSS və JavaScript istifadə edərək hazırladığım sadə və interaktiv kalkulyator tətbiqi.
+    <div class="calculator">
+        <input type="text" id="display" readonly>
+        <div class="buttons">
+            <button onclick="clearDisplay()" class="action">C</button>
+            <button onclick="appendValue('/')" class="action">/</button>
+            <button onclick="appendValue('*')" class="action">*</button>
+            <button onclick="appendValue('-')" class="action">-</button>
+            
+            <button onclick="appendValue('7')">7</button>
+            <button onclick="appendValue('8')">8</button>
+            <button onclick="appendValue('9')">9</button>
+            <button onclick="appendValue('+')" class="action">+</button>
+            
+            <button onclick="appendValue('4')">4</button>
+            <button onclick="appendValue('5')">5</button>
+            <button onclick="appendValue('6')">6</button>
+            <button onclick="calculate()" class="equal">=</button>
+            
+            <button onclick="appendValue('1')">1</button>
+            <button onclick="appendValue('2')">2</button>
+            <button onclick="appendValue('3')">3</button>
+            <button onclick="appendValue('0')" class="zero">0</button>
+            <button onclick="appendValue('.')">.</button>
+        </div>
+    </div>
 
-## 🚀 Texnologiyalar
-* HTML5
-* CSS3 (Grid Layout)
-* JavaScript
+    <script src="script.js"></script>
+</body>
+</html>
 
-## 💻 Necə işlətməli?
-`index.html` faylını hər hansı bir veb brauzerdə açaraq birbaşa istifadə edə bilərsiniz.
